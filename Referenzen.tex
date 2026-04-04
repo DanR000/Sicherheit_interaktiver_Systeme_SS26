@@ -1,0 +1,129 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdfpages}
+
+% Seitenabstände
+\geometry{left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Format der Kapiteltitel
+\addto\captionsngerman{\renewcommand{\chaptername}{}}
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter.}{1em}{}
+
+
+\begin{document}
+	
+% Title page
+\begin{titlepage}
+	\centering
+	\vspace*{2cm} % Add space at the top of the page
+	
+	{\Large Technische Hochschule Deggendorf \par} % University Name
+	\vspace{0.5cm}
+	
+	{\Large Sicherheit interaktiver Systeme\par} % Course Name
+	\vspace{1.5cm}
+	
+	{\huge \textbf{Referenzen für Fallbeispiel} \par} % Subject
+	\vspace{0.5cm}
+	{\Large \textbf{Individueller Fahrradlenker mit Erweiterung: Auftragsgesteuerte Produktion} \par} % Subject
+	\vspace{1.5cm}
+	
+	% Date
+	{\large \today}
+	\vspace{1.5cm}
+	
+	
+	\begin{tabular}{l l}
+		Daniel Ruf & Matrikelnummer: 22310414 \\ 
+		Daniel Henschel & Matrikelnummer: 00804999  \\
+	\end{tabular}
+	
+	\vfill % Fills the remaining space
+	
+\end{titlepage}
+
+
+% Inhaltsverzeichnis
+%\tableofcontents
+
+\newpage 
+
+% Textinhalte hieru
+\chapter{Referenzen}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{./img/ZusammenstellungReferenzen.png}
+\end{figure}
+
+\chapter{Links zu Dokumenten}
+\begin{itemize}
+	\item \hyperref[13]{[13] Anwendungsszenario trifft Praxis}
+	\item \hyperref[10]{[10] Aegis Industry 4.0 Whitepaper}
+	\item \hyperref[8]{[8] Kurzstudie CPS}
+	\item \hyperref[27]{[27] DIN SPEC 91345}
+	\item \hyperref[9]{[9] RAMI4.0 Eine Einführung}
+	\item \hyperref[31]{[31] Statusreport (RAMI4.0)}
+	\item \hyperref[22]{[22] C5:2020}
+\end{itemize}
+
+
+
+\chapter{[13] Anwendungsszenario trifft Praxis}
+Notizen ...
+
+\includepdf[pages={-}]{./Referenzen/[13]-anwendungsszenari0-trifft-praxis.pdf}
+\label{13}
+
+
+\chapter{[10] Aegis Industry 4.0 Whitepaper}
+Notizen ...
+
+\includepdf[pages={-}]{./Referenzen/[10]-aegis-industry-4.0-whitepaper-DE.pdf}
+\label{10}
+
+
+\chapter{[8] Kurzstudie CPS}
+Notizen ...
+
+\includepdf[pages={1,3,5,46-49}]{./Referenzen/[8]-Kurzstudie_CPS_20141007.pdf}
+\label{8}
+
+
+\chapter{[27] DIN SPEC 91345}
+Notizen ...
+
+\includepdf[pages={-}]{./Referenzen/[27]-DIN SPEC 91345 RAMI4.0 dt.pdf}
+\label{27}
+
+
+\chapter{[9] RAMI4.0 Eine Einführung}
+Notizen ...
+
+\includepdf[pages={-}]{./Referenzen/[9]-rami40-eine-einfuehrung.pdf}
+\label{9}
+
+
+\chapter{[31] Statusreport (RAMI4.0)}
+Notizen ...
+
+\includepdf[pages={-}]{./Referenzen/[31]-Statusreport-Referenzmodelle-2015-v10.pdf}
+\label{31}
+
+
+\chapter{[22] C5:2020}
+Notizen ...
+
+\includepdf[pages={1,3-9,36-}]{./Referenzen/[22]-C5_2020.pdf}
+\label{22}
+
+
+\end{document}
